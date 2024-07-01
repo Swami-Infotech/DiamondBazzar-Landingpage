@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300..700&display=swap');
+
+body{
+    font-family: "Signika Negative", sans-serif;
+}
+
+:root{
+    --primary-color: #FF8C00;
+    --secondary-color: #1C1B17;
+    --font-family : "Signika Negative", sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: var(--font-family);
+}
+p{
+    font-family: var(--font-family);
+}
