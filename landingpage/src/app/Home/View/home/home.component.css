@@ -147,12 +147,145 @@
     background: url(../../../../assets/Img/statistics/postingback.png);
     background-size: cover;
     text-align: center;
-    padding: 16% 0;
+    padding: 11% 0;
     width: 240px;
     height: 240px;
     color: #fff;
     margin: 0 auto;
-
 }
 
+
 /* statistics end */
+
+/* testimonial start */
+.reviews {
+    background-image: url(../../../../assets/Img/statistics/dots.png);
+    background-color: #995400;
+    background-blend-mode: soft-light;
+    padding: 80px 0px;
+    margin: 70px 0;
+}
+
+.item .card {
+    border-radius: 15px;
+    background-color: #995400;
+    border-left: 4px solid #fff;
+    border-right: 4px solid #fff;
+    border-bottom: 4px solid #fff;
+}
+
+.item .card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 3px;
+    width: 72%;
+    border-top: 4px solid #fff;
+    border-radius: 15px;
+}
+
+.item .card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 3px;
+    width: 12%;
+    border-top: 4px solid #fff;
+}
+
+.owl-carousel .owl-item img {
+    display: block;
+    width: 52px;
+}
+
+.item .card p {
+    font-size: 18px;
+    padding: 25px 0px;
+    line-height: 40px;
+    font-family: 'Cinzel';
+}
+
+.review-info h5 {
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.review-text img {
+    position: absolute;
+    content: '';
+    top: -147px;
+    right: 84px;
+    width: 12%;
+    height: 100%;
+}
+
+.review-info img {
+    width: 80px !important;
+    height: 80px !important;
+    object-fit: cover;
+}
+
+/* testimonial end */
+
+/* download app start */
+.down{
+    position: relative;
+    margin: 70px 0;
+}
+.downs{
+    background: url(../../../../assets/Img/Download/backgroundapp.png);
+    background-repeat: no-repeat;
+    height: 169px;
+    background-size: cover;
+}
+.down-cont{
+    padding: 8% 20%;
+}
+.down-btn{
+    padding: 7% 0%;
+}
+.down-cont h5{
+    color: var(--primary-color);
+    font-weight: 600;
+}
+.down-cont h4{
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 32px;
+}
+.diamond-img{
+    position: absolute;
+    bottom: 3%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+}
+/* download app end */
+
+/* footer start */
+.footer{
+    background-color: #000;
+    padding: 40px 0;
+}
+.socail-icon .btn{
+    border: 1px solid #FF8C00;
+    background-color: #4f4f4f;
+    margin: 0 15px;
+}
+.compn .title h3{
+    color: var(--primary-color);
+    font-size: 26px;
+}
+.comp-list ul li {
+    color: #fff;
+    list-style: none;
+    text-decoration: none;
+    padding: 7px 0;
+}
+.comp-list ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* footer end */

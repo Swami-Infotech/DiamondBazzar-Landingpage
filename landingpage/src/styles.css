@@ -9,6 +9,16 @@ body{
     --primary-color: #FF8C00;
     --secondary-color: #1C1B17;
     --font-family : "Signika Negative", sans-serif;
+    --dark-green: #9cc675;
+    --dark-yellow: #e89a3d;
+    --extra-light-brown:#fdf0d7;
+    --light-brown: #ecd5ab;
+    --dark-brown:#915b40;
+    --light-yellow:#f8e3a8;
+    --light-red:#f3ac99;
+    --light-teal:#a6c8cc;
+    --light-gray:#ddd5d6;
+          --theme-color2: #e89a3d;
 }
 
 h1,h2,h3,h4,h5,h6{
