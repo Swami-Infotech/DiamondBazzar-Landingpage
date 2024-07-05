@@ -1,12 +1,20 @@
-import { Component, AfterViewInit } from '@angular/core';
+import { Component, AfterViewInit, OnInit } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
+import * as AOS from 'aos';
+declare var anime: any; 
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit {
+  ngOnInit(): void { 
+    AOS.init();
+  }
+
+
+
 
   customOptions: OwlOptions = {
     loop: true,
