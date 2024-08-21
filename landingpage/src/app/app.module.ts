@@ -5,11 +5,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './Home/View/home/home.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
+import { PrivacyComponent } from './privacy/privacy/privacy.component';
+import { TermsComponent } from './terms/terms/terms.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    PrivacyComponent,
+    TermsComponent
   ],
   imports: [
     BrowserModule,
