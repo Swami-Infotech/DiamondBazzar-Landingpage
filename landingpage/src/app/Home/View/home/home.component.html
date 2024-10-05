@@ -11,7 +11,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active text-dark" aria-current="page" href="#">Home</a>
                 </li>
                 <li class="nav-item mx-4">
                     <a class="nav-link text-white" href="#">About</a>
@@ -33,11 +33,11 @@
         </div>
     </div>
 </nav> -->
-<nav class="p-3">
+<nav>
     <div class="container">
         <div class="navbar navbar-expand-lg justify-content-between">
             <div class="navbar-brand">
-                <img src="../../../../assets/Img/logo/DimaondBazzarlogo (1).png" alt="" class="img-fluid"
+                <img src="../../../../assets/Img/logo/DimaondBazzarlogo1.png" alt="" class="img-fluid"
                     style="width:150px">
             </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -47,14 +47,28 @@
             </button>
             <div class="collapse navbar-collapse justify-content-lg-end" id="navbarSupportedContent">
                 <ul class="navbar-nav">
-                    <li><a href="#" class="nav-link text-white pt-2">Home</a></li>
-                    <li><a href="#" class="nav-link text-white pt-2">About Us</a></li>
-                    <li><a href="#" class="nav-link text-white pt-2">Features</a></li>
-                    <li><a href="#" class="nav-link text-white pt-2">Screens</a></li>
-                    <li><a href="#" class="nav-link text-white pt-2">Testimonial</a></li>
+                    <li>
+                        <a href="#" style="cursor: pointer;" class="nav-link text-dark pt-2">Home</a>
+                    </li>
+                    <li>
+                        <a class="nav-link text-dark pt-2" style="cursor: pointer;"
+                            (click)="scrollToSection('AboutSection')">About Us</a>
+                    </li>
+                    <li>
+                        <a class="nav-link text-dark pt-2" style="cursor: pointer;"
+                            (click)="scrollToSection('FeatureSection')">Features</a>
+                    </li>
+                    <li>
+                        <a style="cursor: pointer;" class="nav-link text-dark pt-2"
+                            (click)="scrollToSection('ScreenSection')">Screens</a>
+                    </li>
+                    <li>
+                        <a style="cursor: pointer;" class="nav-link text-dark pt-2"
+                            (click)="scrollToSection('TestimonialSection')">Testimonial</a>
+                    </li>
                 </ul>
                 <div class="start">
-                    <button class="btn text-white border">Get Started</button>
+                    <button class="btn text-dark border">Get Started</button>
                 </div>
             </div>
         </div>
@@ -73,13 +87,10 @@
                             <img src="../../../../assets/Img/banner/diamond.png" alt="diamond" width="100">
                         </div>
                         <div class="banner-cont" data-aos="fade-down">
-                            <h6>WELCOME TO THE DIAMOND BAZZAR!!</h6>
+                            <h6>WELCOME TO THE DIAMOND BAZZAR</h6>
                         </div>
                         <div class="banner-title" data-aos="fade-down">
                             <h1>Creating Memories in Every Carat</h1>
-                        </div>
-                        <div class="dis-btn mt-5" data-aos="fade-left">
-                            <button class="btn">Discover More</button>
                         </div>
                     </div>
                 </div>
@@ -90,7 +101,7 @@
 <!-- slider End -->
 
 <!-- features start -->
-<section class="feature">
+<section class="feature" id="FeatureSection">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12">
@@ -101,7 +112,8 @@
             <div class="col-lg-4 col-md-4 col-sm-12">
                 <div class="feature-box">
                     <div class="card">
-                        <img src="../../../../assets/Img/feature/feature1.png" alt="feature" class="card-img-top">
+                        <img src="../../../../assets/Img/feature/feature1.png" alt="feature" class="card-img-top"
+                            style="height: 350px;">
                         <div class="card-cont d-flex align-items-center">
                             <img src="../../../../assets/Img/feature/fea-icon1.png" alt="" data-aos="zoom-out">
                             <div class="fea-cont ms-2 py-2" data-aos="zoom-out">
@@ -117,7 +129,8 @@
             <div class="col-lg-4 col-md-4 col-sm-12">
                 <div class="feature-box">
                     <div class="card">
-                        <img src="../../../../assets/Img/feature/feature2.png" alt="feature" class="card-img-top">
+                        <img src="../../../../assets/Img/feature/feature3.png" alt="feature" class="card-img-top"
+                            style="height: 350px;">
                         <div class="card-cont d-flex align-items-center">
                             <img src="../../../../assets/Img/feature/fea-icon2.png" alt="" data-aos="zoom-out">
                             <div class="fea-cont ms-2 py-2" data-aos="zoom-out">
@@ -134,7 +147,8 @@
             <div class="col-lg-4 col-md-4 col-sm-12">
                 <div class="feature-box">
                     <div class="card">
-                        <img src="../../../../assets/Img/feature/feature3.png" alt="feature" class="card-img-top">
+                        <img src="../../../../assets/Img/feature/feature2.png" alt="feature" class="card-img-top"
+                            style="height: 350px;">
                         <div class="card-cont d-flex align-items-center">
                             <img src="../../../../assets/Img/feature/fea-iocn3.png" alt="" data-aos="zoom-out">
                             <div class="fea-cont ms-2 py-2" data-aos="zoom-out">
@@ -154,7 +168,7 @@
 <!-- features End -->
 
 <!-- about start -->
-<section class="about">
+<section class="about" id="AboutSection">
     <div class="container">
         <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-12 mx-0 px-0">
@@ -175,7 +189,8 @@
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12 mx-0 px-0">
                 <div class="about-img">
-                    <img src="../../../../assets/Img/about/about.jpeg" alt="about" class="img-fluid">
+                    <img src="../../../../assets/Img/about/about.jpeg" alt="about" class="img-fluid"
+                        style="height: 444px;">
                 </div>
             </div>
 
@@ -188,7 +203,7 @@
 <!-- about end -->
 
 <!-- our app start -->
-<section class="app">
+<section class="app" id="ScreenSection">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12">
@@ -196,7 +211,8 @@
                     <h2>Some Glimpse Of Our App</h2>
                 </div>
                 <div class="app-cont text-center my-4">
-                    <p class="w-50 mx-auto">We serve clients worldwide, offering reliable and efficient shipping and handling services.
+                    <p class="w-50 mx-auto">We serve clients worldwide, offering reliable and efficient shipping and
+                        handling services.
                     </p>
                 </div>
             </div>
@@ -279,7 +295,7 @@
 <!-- statistics End -->
 
 <!-- testimonial start -->
-<section class="reviwes">
+<section class="reviwes" id="TestimonialSection">
     <div class="reviwe-slider reviews">
         <div class="col-lg-12 col-md-12 col-sm-12">
             <div class="title text-white text-center">
@@ -292,7 +308,7 @@
                     <div class="item">
                         <div class="container">
                             <div class="row">
-                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="col-lg-12 col-md-12 col-sm-12">
                                     <div class="card  text-white p-5 position-relative mt-5">
                                         <div class="review-text">
                                             <img src="../../../../assets/Img/statistics/quote.svg" alt="">
@@ -304,8 +320,8 @@
                                     </div>
                                     <div class="review-info mt-4 d-flex align-items-center">
                                         <div class="review-img d-flex  position-relative">
-                                            <img src="../../../../assets/Img/NakliInsaan/images.png" class="rounded-circle"
-                                                width="100px" alt="">
+                                            <img src="../../../../assets/Img/NakliInsaan/images.png"
+                                                class="rounded-circle" width="100px" alt="">
                                         </div>
                                         <div class="text-white ms-3">
                                             <h5 class="text-uppercase">– Maheshbhai Patel,</h5>
@@ -313,7 +329,15 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-6 col-md-6 col-sm-6">
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="item">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-6">
                                     <div class="card  text-white p-5 position-relative mt-5">
                                         <div class="review-text">
                                             <img src="../../../../assets/Img/statistics/quote.svg" alt="">
@@ -325,12 +349,71 @@
                                     </div>
                                     <div class="review-info mt-4 d-flex align-items-center">
                                         <div class="review-img d-flex  position-relative">
-                                            <img src="../../../../assets/Img/NakliInsaan/images.png" class="rounded-circle"
-                                                width="100px" alt="">
+                                            <img src="../../../../assets/Img/NakliInsaan/images.png"
+                                                class="rounded-circle" width="100px" alt="">
                                         </div>
                                         <div class="text-white ms-3">
                                             <h5 class="text-uppercase">– Vishnu Desai,</h5>
                                             <h5 class="text-uppercase">Surat</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="item">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <div class="card  text-white p-5 position-relative mt-5">
+                                        <div class="review-text">
+                                            <img src="../../../../assets/Img/statistics/quote.svg" alt="">
+                                            <p class="text-uppercase">"Inquiries have become so much easier to handle. I
+                                                love how organized and clear everything is, making communication with
+                                                buyers smooth and efficient."
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="review-info mt-4 d-flex align-items-center">
+                                        <div class="review-img d-flex  position-relative">
+                                            <img src="../../../../assets/Img/NakliInsaan/images.png"
+                                                class="rounded-circle" width="100px" alt="">
+                                        </div>
+                                        <div class="text-white ms-3">
+                                            <h5 class="text-uppercase">– Ajay Patel,</h5>
+                                            <h5 class="text-uppercase">Mumbai, Gujarat.</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="item">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <div class="card  text-white p-5 position-relative mt-5">
+                                        <div class="review-text">
+                                            <img src="../../../../assets/Img/statistics/quote.svg" alt="">
+                                            <p class="text-uppercase">"The application has allowed us to respond to
+                                                inquiries faster and more effectively. We've seen a noticeable increase
+                                                in sales since adopting this tool."
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="review-info mt-4 d-flex align-items-center">
+                                        <div class="review-img d-flex  position-relative">
+                                            <img src="../../../../assets/Img/NakliInsaan/images.png"
+                                                class="rounded-circle" width="100px" alt="">
+                                        </div>
+                                        <div class="text-white ms-3">
+                                            <h5 class="text-uppercase">– Ramesh Patel,</h5>
+                                            <h5 class="text-uppercase">Ahmadabad, Gujarat.</h5>
                                         </div>
                                     </div>
                                 </div>
@@ -359,17 +442,20 @@
                     <div class="down-btn">
                         <div class="play">
                             <a href="">
-                                <button class="btn border me-3" >
-                                  <a target="_blank" href="https://play.google.com/store/apps/details?id=in.diamondbazzar">
-                                    <img  src="../../../../assets/Img/Download/playstore.png" alt="playstore"
-                                    width="150">
-                                  </a>
+                                <button class="btn border me-3">
+                                    <a target="_blank"
+                                        href="https://play.google.com/store/apps/details?id=in.diamondbazzar">
+                                        <img src="../../../../assets/Img/Download/playstore.png" alt="playstore"
+                                            width="150">
+                                    </a>
                                 </button>
                             </a>
                             <a href="">
                                 <button class="btn border">
-                                    <a href="https://apps.apple.com/app/diamond-bazzar-your-gem-hub/id6670790184" target="_blank" rel="noopener noreferrer">
-                                        <img src="../../../../assets/Img/Download/appstore.png" alt="appstore" width="150">
+                                    <a href="https://apps.apple.com/app/diamond-bazzar-your-gem-hub/id6670790184"
+                                        target="_blank" rel="noopener noreferrer">
+                                        <img src="../../../../assets/Img/Download/appstore.png" alt="appstore"
+                                            width="150">
 
                                     </a>
                                 </button>
@@ -392,15 +478,15 @@
 <section class="footer">
     <div class="container">
         <div class="row">
-            <div class="col-lg-5 col-md-5 col-sm-12">
+            <div class="col-lg-6 col-md-6 col-sm-12">
                 <div class="foot-logo mb-3">
-                    <img src="../../../../assets/Img/logo/DimaondBazzarlogo (1).png" alt="DimaondBazzarlogo"
-                        width="150">
+                    <img src="../../../../assets/Img/logo/DimaondBazzarlogo1.png" alt="DimaondBazzarlogo" width="150">
                 </div>
-                <div class="foot-cont text-white">
-                    <p>Dedicated to excellence and transparency in the diamond industry, offering quality and trust you can rely on.</p>
+                <div class="foot-cont text-dark">
+                    <p>Dedicated to excellence and transparency in the diamond industry, offering quality and trust you
+                        can rely on.</p>
                 </div>
-                <div class="socail-icon mt-4">
+                <!-- <div class="socail-icon mt-4">
                     <div class="insta mb-3">
                         <a href="">
                             <button class="btn text-white">
@@ -418,7 +504,7 @@
                             </button>
                         </a>
                     </div>
-                </div>
+                </div> -->
             </div>
             <div class="col-lg-2 col-md-2 col-sm-12">
                 <div class="compn">
@@ -426,11 +512,26 @@
                         <h3>Company</h3>
                     </div>
                     <div class="comp-list">
-                        <ul>
-                            <li><a href="">Home</a></li>
-                            <li><a href="">About Us</a></li>
-                            <li><a href="">Features</a></li>
-                            <li><a href="">Screens</a></li>
+                        <ul class="navbar-nav">
+                            <li class="py-0">
+                                <a href="#" style="cursor: pointer;" class="nav-link text-dark">Home</a>
+                            </li>
+                            <li class="py-0">
+                                <a class="nav-link text-dark" style="cursor: pointer;"
+                                    (click)="scrollToSection('AboutSection')">About Us</a>
+                            </li>
+                            <li class="py-0">
+                                <a class="nav-link text-dark" style="cursor: pointer;"
+                                    (click)="scrollToSection('FeatureSection')">Features</a>
+                            </li>
+                            <li class="py-0">
+                                <a style="cursor: pointer;" class="nav-link text-dark"
+                                    (click)="scrollToSection('ScreenSection')">Screens</a>
+                            </li>
+                            <li class="py-0">
+                                <a style="cursor: pointer;" class="nav-link text-dark"
+                                    (click)="scrollToSection('TestimonialSection')">Testimonial</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -438,32 +539,14 @@
             <div class="col-lg-2 col-md-2 col-sm-12">
                 <div class="compn">
                     <div class="title">
-                        <h3>Links</h3>
+                        <h3>Legal</h3>
                     </div>
                     <div class="comp-list">
-                        <ul>
-                            <li><a href="">Help</a></li>
-                            <li><a routerLink="/privacy">Privacy Policy</a></li>
-                            <li><a routerLink="/terms">Terms Of Use</a></li>
-                            <li><a href="">Services</a></li>
+                        <ul class="ps-0">
+                            <li><a class="text-dark" routerLink="/privacy" target="_blank">Privacy Policy</a></li>
+                            <li><a class="text-dark" routerLink="/terms" target="_blank">Terms Of Use</a></li>
                         </ul>
                     </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-12">
-                <div class="compn">
-                    <div class="title">
-                        <h3>Get The Latest Information</h3>
-                    </div>
-                    <form class="d-flex mt-4">
-                        <div class="mb-3 newsletter d-flex flex-wrap align-items-center">
-                            <input type="text" class="send-input py-1 px-3" placeholder="Email Address">
-                            <button class="btn paper-plan-bg">
-                                <i class="bi bi-chevron-right text-white"></i>
-                            </button>
-                        </div>
-
-                    </form>
                 </div>
             </div>
         </div>

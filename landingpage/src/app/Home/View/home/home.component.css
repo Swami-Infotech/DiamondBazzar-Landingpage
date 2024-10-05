@@ -4,7 +4,7 @@
     align-items: center;
 } */
 nav{
-    background-color: #000;
+    background-color: #fff;
 }
 .navbar-nav a {
     font-weight: 600;
@@ -24,9 +24,9 @@ nav{
   }
 /* banner start */
 .slider{
-    background-image: url(../../../../assets/Img/banner/banner.png);
+    background-image: url(../../../../assets/Img/banner/rough.png);
     background-size: cover;
-    height: 89vh;
+    height: 100vh;
     position: relative;
 }
 .slider .overlay {
@@ -76,7 +76,7 @@ nav{
 .card-cont{
     background-color: #fff;
     position: absolute;
-    bottom: -11%;
+    bottom: -37%;
     width: 80%;
     left: 50%;
     transform: translate(-50%,-50%);
@@ -315,7 +315,7 @@ nav{
 
 /* footer start */
 .footer{
-    background-color: #000;
+    background-color: #F2F0EF;
     padding: 40px 0;
 }
 .socail-icon .btn{
@@ -532,6 +532,45 @@ nav{
         position: relative;
     }
 }
+
+@media (max-width:412px) {
+    .review-text img {
+        position: fixed;
+        content: '';
+        top: 7%;
+        right: 11%;
+        width: 12%;
+        height: 100%;
+        transform: translate(-50%, -50%);
+    }
+    .feature-box .card {
+        border: 0;
+        position: relative;
+        margin-bottom: 15px;
+    }
+    .card-cont {
+        background-color: #fff;
+        position: absolute;
+        bottom: -23%;
+        width: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 7px 10px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.55);
+    }
+    ul{
+        padding-right: 0px;
+    }
+    .downs{
+        background: url(../../../../assets/Img/Download/backgroundapp.png);
+        background-repeat: no-repeat;
+        height: 345px;
+        background-size: cover;
+        background-position: center center;
+    }
+}
 @media (max-width:376px) {
     .downs {
         background: url(../../../../assets/Img/Download/backgroundapp.png);
@@ -542,6 +581,38 @@ nav{
     }
     .send-input{
         width: 300px;
+    }
+}
+
+@media (max-width:360px) {
+    .review-text img {
+        position: fixed;
+        content: '';
+        top: 7%;
+        right: 11%;
+        width: 12%;
+        height: 100%;
+        transform: translate(-50%, -50%);
+    }
+    .feature-box .card {
+        border: 0;
+        position: relative;
+        margin-bottom: 15px;
+    }
+    .card-cont {
+        background-color: #fff;
+        position: absolute;
+        bottom: -23%;
+        width: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 7px 10px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.55);
+    }
+    ul{
+        padding-right: 0px;
     }
 }
 /* media query end */

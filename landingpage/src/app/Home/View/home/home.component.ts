@@ -1,4 +1,4 @@
-import { Component, AfterViewInit, OnInit } from '@angular/core';
+import { Component, AfterViewInit, OnInit, Renderer2 } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 import * as AOS from 'aos';
 declare var anime: any; 
@@ -11,6 +11,19 @@ declare var anime: any;
 export class HomeComponent implements OnInit {
   ngOnInit(): void { 
     AOS.init();
+  }
+
+  constructor(private renderer: Renderer2){}
+
+
+  scrollToSection(sectionId: string) {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      const yOffset = -70; // Adjust this value based on your navbar height (80px in this example)
+      const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+      window.scrollTo({ top: y, behavior: 'smooth' });
+    }
   }
 
 
@@ -36,7 +49,7 @@ export class HomeComponent implements OnInit {
         items: 2
       },
       1000: {
-        items: 3
+        items: 2
       }
     },
     nav: true
