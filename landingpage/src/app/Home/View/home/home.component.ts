@@ -9,8 +9,12 @@ declare var anime: any;
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  ngOnInit(): void { 
-    AOS.init();
+  ngOnInit(): void {
+    AOS.init({
+      duration: 1200, 
+      once: true, 
+      easing: 'ease-in-out', 
+    });
   }
 
   constructor(private renderer: Renderer2){}
