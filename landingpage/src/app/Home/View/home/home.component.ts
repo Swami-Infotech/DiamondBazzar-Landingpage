@@ -1,4 +1,4 @@
-import { Component, AfterViewInit, OnInit, Renderer2 } from '@angular/core';
+import { Component, AfterViewInit, OnInit, Renderer2, HostListener } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 import * as AOS from 'aos';
 declare var anime: any; 
@@ -8,16 +8,29 @@ declare var anime: any;
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent implements OnInit,AfterViewInit {
   ngOnInit(): void {
+    AOS.refresh();
+  }
+
+  ngAfterViewInit(): void {
     AOS.init({
       duration: 1200, 
-      once: true, 
+      once: false, 
       easing: 'ease-in-out', 
+      offset:100
     });
   }
 
+
+
+  @HostListener('window:scroll', ['$event'])
+  onScroll(event: Event): void {
+    AOS.refresh(); 
+  }
+
   constructor(private renderer: Renderer2){}
+
 
 
   scrollToSection(sectionId: string) {
