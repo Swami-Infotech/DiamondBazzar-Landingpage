@@ -4,6 +4,7 @@ import { HomeComponent } from './Home/View/home/home.component';
 import { AppComponent } from './app.component';
 import { PrivacyComponent } from './privacy/privacy/privacy.component';
 import { TermsComponent } from './terms/terms/terms.component';
+import { DownloadComponent } from './download/download.component';
 
 const routes: Routes = [
   {
@@ -28,6 +29,10 @@ const routes: Routes = [
   {
     path:"terms",
     component:TermsComponent
+  },
+  {
+    path:"download",
+    component:DownloadComponent
   }
 ];
 

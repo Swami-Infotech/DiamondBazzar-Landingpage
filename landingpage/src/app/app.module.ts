@@ -7,13 +7,15 @@ import { HomeComponent } from './Home/View/home/home.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { PrivacyComponent } from './privacy/privacy/privacy.component';
 import { TermsComponent } from './terms/terms/terms.component';
+import { DownloadComponent } from './download/download.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     PrivacyComponent,
-    TermsComponent
+    TermsComponent,
+    DownloadComponent
   ],
   imports: [
     BrowserModule,
