@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { PrivacyComponent } from './privacy/privacy/privacy.component';
 import { TermsComponent } from './terms/terms/terms.component';
 import { DownloadComponent } from './download/download.component';
+import { PostDetailsComponent } from './PostDetails/View/post-details/post-details.component';
 
 const routes: Routes = [
   {
@@ -33,6 +34,10 @@ const routes: Routes = [
   {
     path:"download",
     component:DownloadComponent
+  },
+  {
+    path:"PostDetails/:encryID",
+    component:PostDetailsComponent
   }
 ];
 

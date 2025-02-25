@@ -1,0 +1,278 @@
+.thumbnails img{
+    width: 130px;
+    margin: 10px 10px 0 0;
+}
+.thumbnails{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.thumbnails img{
+    border: 1px solid #000;
+}
+.piece{
+    position: relative;
+}
+.piece p{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 200px; 
+        align-items: baseline;
+}
+.chat-icon{
+  margin: 0 0 0 5%;
+}
+.dot{
+    position: absolute;
+    left: 55%;
+    top: 6%;
+    transform: translate(-50%);
+}
+#carousel2{
+    display: flex;
+    align-items: center;
+}
+#heart {
+    color: grey;  
+    font-size: 30px;
+  }
+  
+  #heart.red {
+    color: red;
+  }
+.live{
+    background: linear-gradient(0.25turn ,rgba(255, 140, 0, 1),rgba(153, 84, 0, 1));
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    font-family: var(--theme-fo);
+    font-weight: 500;
+}
+.piece h6{
+    font-family: var(--fonts);
+    font-weight: 600;
+    font-size: 20px;
+    color: rgba(255, 140, 0, 1);
+}
+.piece p{
+    font-family: var(--fonts);
+    font-weight: 500;
+    font-size: 20px;
+    overflow-x: hidden;
+}
+.pro .card{
+    border: 0;
+}
+.price{
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 0 15px;
+}
+.client .card{
+    border: 0;
+    background: rgba(250, 250, 250, 1);
+}
+
+.calls{
+    background-color: #000;
+    border-radius: 50px;
+    padding: 7px 45px 0 0 ;
+}
+.title{
+    padding: 4px 0 0 76px;
+}
+.title h5{
+    margin: 1px 0 36% -89%;
+}
+.titles h5{
+    margin: 1px 0 11% 16%;;
+}
+.call-btn i{
+    font-size: 22px;
+}
+a{
+    text-decoration: none;
+}
+.message{
+    background: linear-gradient(rgba(255, 140, 0, 1),rgba(153, 84, 0, 1));
+    border-radius: 50px;
+    padding: 7px 0 0 0 ;
+}
+.client{
+    border: 1px solid #000;
+    padding: 0 6%;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+.post-details{
+    border: 1px solid #000;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    padding: 5px 5px;
+}
+.module-slider{
+  margin: 8% 0;
+}
+.module-slider img{
+  height: 480px;
+}
+
+
+/* .floating-form {
+    position: relative;
+  }
+  .floating-form .form-control {
+    background: transparent;
+    position: relative;
+    z-index: 50;
+  }
+  .floating-form .form-control:focus, .floating-form .form-control:active, .floating-form .form-control:valid {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+  .floating-form .form-control:focus + label, .floating-form .form-control:active + label, .floating-form .form-control:valid + label {
+    transform: translateY(-40%);
+    top: -2px;
+    z-index: 100;
+    font-size: 18px;
+  }
+  .floating-form label {
+    padding-left: 5px;
+    padding-right: 5px;
+    position: absolute;
+    top: 50%;
+    left: 0.75rem;
+    z-index: 1;
+    font-size: 18px;
+    transform: translateY(-50%);
+    transition: all 0.3s;
+    background: #fff;
+    color: #000;
+    font-weight: 500;
+  }
+  .floating-form textarea + label {
+    top: 1.275rem;
+  }
+  .floating-form input{
+    font-size: 17px;
+  } */
+    
+
+
+
+
+
+
+  .input-container {
+    position: relative;
+    margin-bottom: 1.5rem;
+  }
+  
+  .floating-form .form-control {
+    border: 1px solid #ccc;
+    padding: 12px;
+    font-size: 16px;
+    width: 100%;
+    background: #f9f9f9;
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+  
+  .floating-form .form-control:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    background: white;
+  }
+  
+  .floating-form .form-control:focus + .form-label,
+  .floating-form .form-control:not(:placeholder-shown) + .form-label {
+    transform: translateY(-20px);
+    font-size: 12px;
+    color: #007bff;
+  }
+  
+  .floating-form .form-label {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    font-size: 16px;
+    color: #777;
+    pointer-events: none;
+    transition: all 0.2s;
+  }
+  
+  .floating-form .form-control[readonly] {
+    background-color: #f9f9f9;
+  }
+  
+  .floating-form .form-control[readonly] + .form-label {
+    transform: translateY(-88%);
+    font-size: 17px;
+    color: #000;
+    background: #fff;
+    font-weight: 700;
+
+  }
+  .input-container{
+    margin-top: 15px;
+  }
+  .client-img{
+    margin: 0 5% 0 0;
+  }
+
+ 
+
+/* media query start */
+.sub-img1{
+    display: none;
+}
+
+@media (max-width:769px) {
+    .sub-img{
+        display: none;
+    }
+    .sub-img1{
+        display: block;
+    }
+    #carousel2{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width:425px) {
+  .piece p {
+    font-family: var(--fonts);
+    font-weight: 500;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+.piece h6{
+  font-size: 18px;
+}
+.piece p {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 110px;
+  align-items: baseline;
+}
+.client-img{
+  margin: 25px 0;
+}
+.input-container {
+  position: relative;
+  margin-bottom: 1rem;
+}
+.call-btn{
+  justify-content: center;
+}
+.titles h5 {
+  margin: 1px 0 4% 0%;
+}
+.chat-icon{
+  margin: 0 0 0 5%;
+}
+}
+/* media query end */

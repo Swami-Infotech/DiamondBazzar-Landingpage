@@ -8,6 +8,9 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
 import { PrivacyComponent } from './privacy/privacy/privacy.component';
 import { TermsComponent } from './terms/terms/terms.component';
 import { DownloadComponent } from './download/download.component';
+import { PostDetailsComponent } from './PostDetails/View/post-details/post-details.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -15,12 +18,15 @@ import { DownloadComponent } from './download/download.component';
     HomeComponent,
     PrivacyComponent,
     TermsComponent,
-    DownloadComponent
+    DownloadComponent,
+    PostDetailsComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    CarouselModule
+    CarouselModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
