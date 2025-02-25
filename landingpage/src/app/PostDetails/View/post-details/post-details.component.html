@@ -1,4 +1,4 @@
-
+<app-header></app-header>
 <div class="container">
   <div class="row">
     <div class="col-lg-6 col-md-6 col-sm-12" id="carousel2" style="
@@ -72,72 +72,20 @@
 
 
       <div class="col-lg-12">
-        <div class="client">
-          <div class="client-details d-flex flex-wrap align-items-center justify-content-center">
-            <div class="client-img">
-              <img src="../../../../assets/client.png" alt="client">
+        <div class="user-detils text-center">
+            <h2>To See More Information</h2>
+
+            <div class="playstroe">
+              <a href="https://play.google.com/store/apps/details?id=in.diamondbazzar&pcampaignid=web_share" target="_blank">
+                <img src="../../../../assets/Img/App/playstore.png" alt="" width="150" class="me-4 my-4">
+              </a>
+              <a href="https://apps.apple.com/app/diamond-bazzar-your-gem-hub/id6670790184" target="_blank">
+                <img src="../../../../assets/Img/App/appstore.png" alt="" width="150">
+              </a>
             </div>
-            <div class="client-name d-flex flex-wrap align-items-center">
-              <form action="">
-                <div class="row">
-                  <div class="col-lg-6">
-                    <div class="input-container floating-form">
-                      <input readonly type="text" id="username" class="form-control" placeholder=" " name="username"
-                        [(ngModel)]="userDetails.userName" />
-                      <label for="username" class="form-label">User
-                        Name</label>
-                    </div>
-                  </div>
-                  <div class="col-lg-6">
-                    <div class="input-container floating-form">
-                      <input readonly type="text" id="companyname" class="form-control" placeholder=" "
-                        name="companyname" [(ngModel)]="userDetails.companyName" />
-                      <label for="companyname" class="form-label">Company
-                        Name</label>
-                    </div>
-                  </div>
-                  <div class="col-lg-12">
-                    <div class="input-container floating-form">
-                      <input readonly type="text" id="address" class="form-control" placeholder=" " name="address"
-                        [(ngModel)]="userDetails.address" />
-                      <label for="address" class="form-label">Address
-                      </label>
-                    </div>
-                  </div>
-                </div>
-              </form>
+            <div class="appstore">
+             
             </div>
-            <div class="chat-icon">
-              <div class="calls mt-5">
-                <div class="call-btn d-flex flex-wrap align-items-center">
-                  <button class="btn">
-                    <a [href]="'tel:' + userDetails.phoneNumber">
-                      <i class="bi bi-telephone-fill text-white"></i>
-                    </a>
-                  </button>
-                  <a [href]="'tel:' + userDetails.phoneNumber">
-                    <div class="title">
-                      <h5 class="text-white">Call</h5>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div class="message my-5">
-                <div class="call-btn d-flex flex-wrap align-items-center">
-                  <button class="btn">
-                    <a [href]="'https://api.whatsapp.com/send?phone='+ userDetails.phoneNumber">
-                      <i class="bi bi-whatsapp text-white"></i>
-                    </a>
-                  </button>
-                  <a [href]="'https://api.whatsapp.com/send?phone='+ userDetails.phoneNumber">
-                    <div class="titles">
-                      <h5 class="text-white">Whatsapp</h5>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
 
@@ -145,3 +93,4 @@
 
   </div>
 </div>
+<app-footer></app-footer>

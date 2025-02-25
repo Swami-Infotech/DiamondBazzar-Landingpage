@@ -11,6 +11,8 @@ import { DownloadComponent } from './download/download.component';
 import { PostDetailsComponent } from './PostDetails/View/post-details/post-details.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { HeaderComponent } from './Header/header/header.component';
+import { FooterComponent } from './Footer/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +22,8 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     TermsComponent,
     DownloadComponent,
     PostDetailsComponent,
+    HeaderComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

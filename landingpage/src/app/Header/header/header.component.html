@@ -1,0 +1,43 @@
+<nav>
+    <div class="container">
+        <div class="navbar navbar-expand-lg justify-content-between">
+            <div class="navbar-brand">
+                <img src="../../../../assets/Img/logo/DimaondBazzarlogo1.png" alt="" class="img-fluid"
+                    style="width:150px">
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-lg-end" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li>
+                        <a  style="cursor: pointer;" class="nav-link text-dark pt-2">Home</a>
+                    </li>
+                    <li>
+                        <a class="nav-link text-dark pt-2" style="cursor: pointer;"
+                            (click)="scrollToSection('AboutSection')">About Us</a>
+                    </li>
+                    <li>
+                        <a class="nav-link text-dark pt-2" style="cursor: pointer;"
+                            (click)="scrollToSection('FeatureSection')">Features</a>
+                    </li>
+                    <li>
+                        <a style="cursor: pointer;" class="nav-link text-dark pt-2"
+                            (click)="scrollToSection('ScreenSection')">Screens</a>
+                    </li>
+                    <li>
+                        <a style="cursor: pointer;" class="nav-link text-dark pt-2"
+                            (click)="scrollToSection('TestimonialSection')">Testimonial</a>
+                    </li>
+                </ul>
+                <div class="start">
+                    <button class="btn text-dark border">
+                        <a href="http://portal.diamondbazzar.in/login" target="_blank">Get Started</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>

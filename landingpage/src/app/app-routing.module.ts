@@ -6,6 +6,8 @@ import { PrivacyComponent } from './privacy/privacy/privacy.component';
 import { TermsComponent } from './terms/terms/terms.component';
 import { DownloadComponent } from './download/download.component';
 import { PostDetailsComponent } from './PostDetails/View/post-details/post-details.component';
+import { HeaderComponent } from './Header/header/header.component';
+import { FooterComponent } from './Footer/footer/footer.component';
 
 const routes: Routes = [
   {
@@ -38,6 +40,14 @@ const routes: Routes = [
   {
     path:"PostDetails/:encryID",
     component:PostDetailsComponent
+  },
+  {
+    path:"Header",
+    component:HeaderComponent
+  },
+  {
+    path:"Footer",
+    component:FooterComponent
   }
 ];
 
